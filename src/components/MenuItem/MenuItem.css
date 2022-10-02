@@ -1,0 +1,16 @@
+.menu-item {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0 15px;
+  padding: 15px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #111;
+}

@@ -1,0 +1,14 @@
+ul {
+  list-style: none;
+}
+
+.header-nav a:hover, .header-nav a:focus {
+  color: #000;
+  transition: all ease 0.3s;
+}
+
+.header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
