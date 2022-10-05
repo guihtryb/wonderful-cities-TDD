@@ -11,14 +11,14 @@ describe('CitesSection component', () => {
 
     expect(screen.getByTestId('cities-section')).toBeInTheDocument();
   });
-  it.only('has a h1 with the data-testid equal title', () => {
+  it('has a h1 with the data-testid equal title', () => {
     render(<CitiesSection />);
 
     const title = screen.getByRole('heading', { level: 1, name: 'Amazing Cities'});
 
     expect(title).toBeInTheDocument();
   });
-  it.only('has a ul with the data-testid equal cities-gallery', () => {
+  it('has a ul with the data-testid equal cities-gallery', () => {
     render(<CitiesSection />);
 
     const citiesGallery = screen.getByTestId('cities-gallery');
@@ -26,6 +26,6 @@ describe('CitesSection component', () => {
 
     const citiesImages = citiesGallery.children.length;
 
-    expect(citiesImages).toBeGreaterThanOrEqual(2);
+    expect(citiesImages).toBeGreaterThanOrEqual(1);
   });
 });

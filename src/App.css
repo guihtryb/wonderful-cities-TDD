@@ -8,8 +8,25 @@
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
+.grid-section {
+  box-sizing: border-box;
+  display: grid;
+  grid-column: 2 / 4;
+  grid-gap: 20px;
+  grid-template-columns: 90px 300px 1fr;
+  margin-bottom: 4rem;
+  padding: 10px;
+  width: 100%;
+}
+
 @media (max-width : 700px) {
   .app {
     grid-template-columns: 1fr;
+  }
+
+  .grid-section {
+    gap: 10px;
+    grid-column: 1;
+    grid-template-columns: 205px 1fr;
   }
 }
