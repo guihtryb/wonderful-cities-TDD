@@ -1,0 +1,18 @@
+.city-name {
+  color: #111;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.city-name:before {
+  background: #00565c;
+  border-radius: 20px;
+  content: '';
+  display: inline-block;
+  height: 12px;
+  margin-right: 10px;
+  width: 40px;
+}
