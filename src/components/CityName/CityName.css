@@ -16,3 +16,31 @@
   margin-right: 10px;
   width: 40px;
 }
+
+@media (max-width : 850px) {
+  .city-name {
+    position: relative;
+    color: #000;
+    font-family: serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    margin: 1rem 0;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    width: fit-content;
+  }
+  
+  .city-name::before {
+    height: 4px;
+    position: absolute;
+    top: 1.75rem;
+    border-radius: 0;
+    width: 25%;
+    transition: width ease 0.3s;
+  }
+
+  .city-name:hover::before {
+    width: 100%;
+  }
+  
+}

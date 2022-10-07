@@ -21,7 +21,7 @@ describe('CitesSection component', () => {
       <CitiesSection />
     </ Provider>);
 
-    const title = screen.getByRole('heading', { level: 1, name: 'Amazing Cities'});
+    const title = screen.getByRole('heading', { level: 1, name: 'Wonderful Cities'});
 
     expect(title).toBeInTheDocument();
   });
@@ -64,5 +64,13 @@ describe('CitesSection component', () => {
     </ Provider>);
 
     expect(screen.getByTestId('city-name')).toBeInTheDocument();
+  });
+  it('has a introduction paragraph with data-testid equal introduction-paragraph-1', () => {
+    render(
+    <Provider>
+      <CitiesSection />
+    </ Provider>);
+
+    expect(screen.getByTestId('introduction-paragraph-1')).toBeInTheDocument();
   });
 });

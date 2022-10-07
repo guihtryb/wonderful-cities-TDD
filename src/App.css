@@ -5,7 +5,7 @@
 
 .app {
   display:  grid;
-  grid-template-columns: 1fr 120px minmax(300px, 950px) 0.3fr;
+  grid-template-columns: 1fr 120px minmax(300px, 950px) 0.35fr;
 }
 
 .grid-section {
@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-@media (max-width : 750px) {
+@media (max-width : 850px) {
   .app {
     grid-template-columns: 1fr;
   }

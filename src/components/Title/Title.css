@@ -8,3 +8,9 @@
   line-height: 1;
   margin-bottom: 1rem;
 }
+
+@media (max-width : 850px) {
+  .title {
+    font-size: 3rem;
+  }
+}

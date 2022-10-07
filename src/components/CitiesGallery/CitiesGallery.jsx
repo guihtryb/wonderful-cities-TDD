@@ -18,14 +18,16 @@ export default function CitiesGallery() {
 
   return (
     <div className="cities-gallery">
-      <button
-        onClick={goToPreviousSlide}
-        className="slide-button previous"
-        type="button"
-      >
-        <img src={previousIcon} alt="previous city icon" />
-      </button>
       <ul data-testid="cities-gallery" className="cities-list">
+        <li>
+          <button
+            onClick={goToPreviousSlide}
+            className="slide-button previous"
+            type="button"
+          >
+            <img src={previousIcon} alt="previous city icon" />
+          </button>
+        </li>
         {
         cities.map(({ cityName, cityMainImage }, index) => (
           <CityImageItem
@@ -36,10 +38,12 @@ export default function CitiesGallery() {
           />
         ))
       }
+        <li>
+          <button className="slide-button next" type="button" onClick={goToNextSlide}>
+            <img src={nextIcon} alt="next city icon" />
+          </button>
+        </li>
       </ul>
-      <button className="slide-button next" type="button" onClick={goToNextSlide}>
-        <img src={nextIcon} alt="next city icon" />
-      </button>
     </div>
   );
 }

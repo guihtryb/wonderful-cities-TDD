@@ -8,7 +8,11 @@ import context from '../../context/Context';
 export default function CitiesSection() {
   const { cities } = useContext(context);
   return (
-    <section data-testid="cities-section" className="grid-section cities">
+    <section
+      data-testid="cities-section"
+      className="grid-section cities"
+      id="cities"
+    >
       <Title />
       {
         cities

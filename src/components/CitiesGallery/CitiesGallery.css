@@ -1,9 +1,11 @@
 .cities-gallery {
-  position: relative;
   width: fit-content;
+  max-height: 300px;
+  z-index: 0;
 }
 
 .cities-list {
+  position: relative;
   grid-column: 2;
   display: flex;
   flex-wrap: wrap;
@@ -15,30 +17,62 @@
   position: absolute;
   top: 0;
   height: 100%;
-  opacity: 0.2;
+  opacity: 0.4;
   transition: opacity 0.3s;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.next {
+  left: 26.25rem;
 }
 
 .slide-button:hover {
   opacity: 1;
 }
 
-.next {
-  left: 26.28rem;
-}
-
-@media (max-width : 750px) {
+@media (max-width : 850px) {
   .cities-gallery {
-    margin: 10px 50%;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
   }
+
+  .previous {
+    left: -3.85rem;
+  }
+
+  .next {
+    left: 28.1rem;
+  }
+
+  .slide-button {
+    opacity: 0.6;
+    padding: 0 1rem;
+  }
+
   .cities-list {
     grid-column: 1;
+  }
+
+  .slide-button:hover {
+    background-color: #000;
   }
 }
 
 @media (max-width : 650px) {
   .cities-gallery {
     margin: 10px 0;
+  }
+
+  .previous {
+    left: 0rem;
+  }
+
+  .next {
+    left: 24.25rem;
+  }
+
+  .slide-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
   }
 }
