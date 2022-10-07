@@ -1,0 +1,7 @@
+.city-main-image {
+  display: none;
+}
+
+.city-main-image.active {
+  display: block;
+}

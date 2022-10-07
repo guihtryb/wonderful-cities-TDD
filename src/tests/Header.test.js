@@ -1,7 +1,6 @@
 import React from 'react';
+import Header from '../components/Header/Header'; 
 import { render, screen } from '@testing-library/react';
-import App from '../App';
-import Header from '../components/Header';
 
 describe('Header component', () => {
   it('Render correctly', () => {
@@ -17,14 +16,14 @@ describe('Header component', () => {
     expect(screen.getByRole('navigation')).toBeInTheDocument();
     expect(screen.getByTestId('header-nav')).toBeInTheDocument();
   });
-  it("Has a navbar with the correct menu", () => {
+  it("Has a navbar with the correct menu-list", () => {
     render(<Header />);
 
     const items = ['cities', 'faq', 'population'];
 
     const itemsList = screen.getByRole('list');
 
-    expect(itemsList).toHaveAttribute('id', 'menu');
+    expect(itemsList).toHaveAttribute('id', 'menu-list');
 
     for (let itemName of items) {
       expect(screen.getByRole('link', { name: itemName,  })).toBeInTheDocument();
