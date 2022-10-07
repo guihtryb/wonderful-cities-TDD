@@ -8,7 +8,7 @@ header {
   transition: all ease 0.5;
 }
 
-@media (max-width : 700px) {
+@media (max-width : 750px) {
   header {
     grid-column: 1;
     margin-top: 0;

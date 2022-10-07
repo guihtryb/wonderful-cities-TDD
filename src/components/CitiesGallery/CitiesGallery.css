@@ -1,3 +1,44 @@
+.cities-gallery {
+  position: relative;
+  width: fit-content;
+}
+
 .cities-list {
   grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slide-button {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  opacity: 0.2;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slide-button:hover {
+  opacity: 1;
+}
+
+.next {
+  left: 26.28rem;
+}
+
+@media (max-width : 750px) {
+  .cities-gallery {
+    margin: 10px 50%;
+  }
+  .cities-list {
+    grid-column: 1;
+  }
+}
+
+@media (max-width : 650px) {
+  .cities-gallery {
+    margin: 10px 0;
+  }
 }

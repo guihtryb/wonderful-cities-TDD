@@ -7,23 +7,29 @@ import citiesApi from '../api/cities';
 function Provider({ children }) {
   const [cities, setCities] = useState([]);
   const [city, setCity] = useState({});
+  const [cityIndex, setCityIndex] = useState(0);
 
   useEffect(() => {
     const getCities = async () => {
       setCities(citiesApi);
     };
 
+    getCities();
+  }, []);
+
+  useEffect(() => {
     const getCity = async () => {
-      setCity(citiesApi[0]);
+      setCity(citiesApi[cityIndex]);
     };
 
-    getCities();
     getCity();
-  }, []);
+  }, [cityIndex]);
 
   const contextValue = {
     cities,
     city,
+    setCityIndex,
+    cityIndex,
   };
 
   return (
