@@ -7,7 +7,9 @@ export default function Header() {
   return (
     <header data-testid="header">
       <Menu />
-      <LoginButton />
+      <div className="login">
+        <LoginButton />
+      </div>
     </header>
   );
 }
