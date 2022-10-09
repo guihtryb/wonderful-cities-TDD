@@ -1,0 +1,48 @@
+.definition-list {
+  grid-column: 2 / 4;
+}
+
+.definition-title {
+  color: #111;
+  cursor: pointer;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.definition-title::before {
+  background: #00565c;
+  border-radius: 20px;
+  content: '';
+  display: inline-block;
+  height: 10px;
+  margin-right: 10px;
+  width: 20px;
+}
+
+.definition-title::after {
+  content: ' ↴';
+  padding-left: 10px;
+}
+
+.definition-description {
+  display: none;
+  font-family: Helvetica, Arial;
+  font-size: 18.5px;
+  margin-bottom: 0.5rem;
+}
+
+.definition-description.open {
+  display: block;
+}
+
+.definition-title.open::after {
+  content: '↥';
+}
+
+@media (max-width : 700px) {
+  .definition-list {
+    grid-column: 1 / 3;
+  }
+}
