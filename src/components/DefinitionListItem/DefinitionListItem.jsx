@@ -9,7 +9,7 @@ export default function DefinitionListItem({ title, answer }) {
   const handleOpen = () => {
     setOpen(!open);
   };
-  // git
+
   return (
     <div>
       <DefinitionTitle
