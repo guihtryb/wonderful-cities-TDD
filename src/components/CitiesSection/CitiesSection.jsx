@@ -13,7 +13,7 @@ export default function CitiesSection() {
       className="grid-section cities"
       id="cities"
     >
-      <Title />
+      <Title title="Wonderful Cities" />
       {
         cities
         && (
