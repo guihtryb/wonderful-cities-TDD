@@ -6,8 +6,11 @@ import context from '../../context/Context';
 
 export default function CitiesSection() {
   const { cities } = useContext(context);
+
   return (
     <section
+      data-aos="fade-right"
+      data-aos-duration="1050"
       data-testid="cities-section"
       className="grid-section cities"
       id="cities"

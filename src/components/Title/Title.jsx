@@ -4,7 +4,14 @@ import PropTypes from 'prop-types';
 
 export default function Title({ title }) {
   return (
-    <h1 className="title">{title}</h1>
+    <h1
+      data-aos="fade-right"
+      data-aos-duration="1050"
+      className="title"
+    >
+      {title}
+
+    </h1>
   );
 }
 

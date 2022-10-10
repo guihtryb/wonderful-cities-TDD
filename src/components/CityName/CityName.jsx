@@ -5,7 +5,12 @@ import './CityName.css';
 export default function CityName() {
   const { city } = useContext(context);
   return (
-    <h2 data-testid="city-name" className="city-name">
+    <h2
+      data-aos="fade-right"
+      data-aos-duration="1050"
+      data-testid="city-name"
+      className="city-name"
+    >
       { city.cityName }
       ,
       {' '}

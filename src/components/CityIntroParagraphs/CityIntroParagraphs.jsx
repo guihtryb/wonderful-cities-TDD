@@ -7,12 +7,16 @@ export default function CityIntroParagraphs() {
   return (
     <>
       <p
+        data-aos="fade-right"
+        data-aos-duration="1050"
         data-testid="introduction-paragraph-1"
         className="introduction-paragraph"
       >
         { city.cityIntro1 }
       </p>
       <p
+        data-aos="fade-right"
+        data-aos-duration="1050"
         data-testid="introduction-paragraph-2"
         className="introduction-paragraph"
       >

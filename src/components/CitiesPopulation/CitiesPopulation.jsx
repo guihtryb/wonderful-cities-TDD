@@ -39,10 +39,19 @@ export default function CitiesPopulation() {
   };
 
   return (
-    <section data-testid="population-section" className="grid-section population" id="population">
+    <section
+      data-testid="population-section"
+      className="grid-section population"
+      id="population"
+    >
       <Title title="Population" />
       <div className="grid-numbers">
-        <h3 className="city-name-subtitle" data-testid="population-number">
+        <h3
+          data-aos="fade-right"
+          data-aos-duration="1050"
+          className="city-name-subtitle"
+          data-testid="population-number"
+        >
           {' '}
           { formatInhabitantsNumber(city.population) }
           {' '}
