@@ -6,6 +6,7 @@ import CitiesFaq from './components/CitiesFaq/CitiesFaq';
 import CitiesPopulation from './components/CitiesPopulation/CitiesPopulation';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import LoginModal from './components/LoginModal/LoginModal';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <CitiesPopulation />
       <Contact />
       <Footer />
+      <LoginModal />
     </div>
   );
 }
