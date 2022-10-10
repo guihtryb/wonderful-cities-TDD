@@ -8,6 +8,7 @@ function Provider({ children }) {
   const [cities, setCities] = useState([]);
   const [city, setCity] = useState({});
   const [cityIndex, setCityIndex] = useState(0);
+  const [openLogin, setOpenLogin] = useState(false);
 
   useEffect(() => {
     const getCities = async () => {
@@ -30,6 +31,8 @@ function Provider({ children }) {
     city,
     setCityIndex,
     cityIndex,
+    openLogin,
+    setOpenLogin,
   };
 
   return (
