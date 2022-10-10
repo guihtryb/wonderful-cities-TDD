@@ -19,14 +19,3 @@
   width: 100%;
 }
 
-@media (max-width : 850px) {
-  .app {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-section {
-    gap: 10px;
-    grid-template-columns: 205px 1fr;
-    grid-column: 1;
-  }
-}

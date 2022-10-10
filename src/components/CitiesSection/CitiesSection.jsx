@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import CitiesGallery from '../CitiesGallery/CitiesGallery';
 import Title from '../Title/Title';
-import './CitiesSection.css';
 import CityAbout from '../CityIntroduction/CityIntroduction';
 import context from '../../context/Context';
 

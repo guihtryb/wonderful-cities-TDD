@@ -1,6 +1,6 @@
 .city-introduction {
   grid-column: 3;
-  margin-left: 3rem;
+  margin-left: 10rem;
 }
 
 @media (max-width : 850px) {
