@@ -17,7 +17,11 @@ export default function CitiesGallery() {
     ? setCityIndex(0) : setCityIndex(cityIndex + 1));
 
   return (
-    <div className="cities-gallery">
+    <div
+      className="cities-gallery"
+      data-aos="fade-right"
+      data-aos-duration="1050"
+    >
       <ul data-testid="cities-gallery" className="cities-list">
         <li>
           <button

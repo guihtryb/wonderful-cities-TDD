@@ -11,7 +11,10 @@ export default function DefinitionListItem({ title, answer }) {
   };
 
   return (
-    <div>
+    <div
+      data-aos="fade-right"
+      data-aos-duration="1050"
+    >
       <DefinitionTitle
         title={title}
         onClick={handleOpen}

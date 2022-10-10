@@ -41,15 +41,28 @@ export default function Contact() {
   };
 
   return (
-    <section data-testid="contact-section" className="grid-section contact" id="contact">
+    <section
+      data-testid="contact-section"
+      className="grid-section contact"
+      id="contact"
+    >
       <Title title="Contact" />
-      <div className="map">
+      <div
+        className="map"
+        data-aos="fade-right"
+        data-aos-duration="1050"
+      >
         <img src={Map} alt="Map Adress" data-testid="map-image" onMouseLeave={handleMouseLeave} onMouseMove={handleMouseMove} />
         <div className="tooltip" style={{ top: `${top}px`, left: `${left}px`, display: `${showToolTip ? 'block' : 'none'}` }}>
           <span>Porto, Portugal</span>
         </div>
       </div>
-      <ul className="data" data-testid="contact-infos-list">
+      <ul
+        className="data"
+        data-aos="fade-right"
+        data-aos-duration="1050"
+        data-testid="contact-infos-list"
+      >
         <li>guilhermehviana01@gmail.com</li>
         <li>+55 (31) 97541-4521</li>
         <li data-opening-days="1,2,3,4,5,6" data-opening-hours="8,20">
