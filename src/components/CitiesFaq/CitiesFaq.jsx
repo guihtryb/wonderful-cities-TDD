@@ -12,8 +12,6 @@ export default function CitiesFaq() {
       className="grid-section faq"
       id="faq"
       data-testid="faq-section"
-      data-aos="fade-right"
-      data-aos-duration="1050"
     >
       <Title title="faq" />
       <DefinitionList list={city.faq} />
