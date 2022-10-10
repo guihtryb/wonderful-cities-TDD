@@ -5,6 +5,7 @@ import CitiesSection from './components/CitiesSection/CitiesSection';
 import CitiesFaq from './components/CitiesFaq/CitiesFaq';
 import CitiesPopulation from './components/CitiesPopulation/CitiesPopulation';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -14,10 +15,7 @@ function App() {
       <CitiesFaq />
       <CitiesPopulation />
       <Contact />
-      <footer className="copy">
-        <p>All rights reserved</p>
-        <p>Developed by Guilherme Viana</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

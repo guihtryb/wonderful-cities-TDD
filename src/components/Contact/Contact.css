@@ -79,42 +79,7 @@
   color: #1db41d;
 }
 
-
-
-.copy {
-  background: #00565c;
-  grid-column: 3 / 5;
-  margin-bottom: 2rem;
-  padding: 20px;
-}
-
-.copy p {
-  font-family: 'IBM Plex Mono', monospace;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin: 8px 0;
-}
-
 @media (max-width : 850px) {
-  .app {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-section {
-    gap: 10px;
-    grid-template-columns: 205px 1fr;
-    grid-column: 1;
-  }
-
-  .copy {
-    grid-column: 1;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-    padding: 13px 0;
-  }
-
   .map img {
     max-width: 45vw;
   }
