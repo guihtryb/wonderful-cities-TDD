@@ -46,6 +46,9 @@ export default function CitiesPopulation() {
     >
       <Title title="Population" />
       <div className="grid-numbers">
+        {
+          city
+        && (
         <h3
           data-aos="fade-right"
           data-aos-duration="1050"
@@ -57,6 +60,8 @@ export default function CitiesPopulation() {
           {' '}
           Inhabitants.
         </h3>
+        )
+        }
       </div>
     </section>
   );

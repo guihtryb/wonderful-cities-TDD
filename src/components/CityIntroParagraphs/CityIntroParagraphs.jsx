@@ -4,7 +4,7 @@ import './CityIntroParagraphs.css';
 
 export default function CityIntroParagraphs() {
   const { city } = useContext(context);
-  return (
+  return city && (
     <>
       <p
         data-aos="fade-right"

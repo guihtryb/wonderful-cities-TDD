@@ -4,7 +4,7 @@ import './CityName.css';
 
 export default function CityName() {
   const { city } = useContext(context);
-  return (
+  return city && (
     <h2
       data-aos="fade-right"
       data-aos-duration="1050"

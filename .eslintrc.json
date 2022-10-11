@@ -19,5 +19,5 @@
     ],
     "rules": {
     },
-    "ignorePatterns": ["src/tests"]
+    "ignorePatterns": ["src/tests", "cypress*"]
 }
