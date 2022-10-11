@@ -7,14 +7,17 @@ import context from '../../context/Context';
 export default function CitiesFaq() {
   const { city } = useContext(context);
 
-  return city && (
+  return (
     <section
       className="grid-section faq"
       id="faq"
       data-testid="faq-section"
     >
       <Title title="faq" />
-      <DefinitionList list={city.faq} />
+      {
+        city
+      && <DefinitionList list={city.faq} />
+      }
     </section>
   );
 }

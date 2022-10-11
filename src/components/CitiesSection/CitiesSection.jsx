@@ -6,7 +6,6 @@ import context from '../../context/Context';
 
 export default function CitiesSection() {
   const { cities } = useContext(context);
-
   return (
     <section
       data-aos="fade-right"
@@ -18,12 +17,12 @@ export default function CitiesSection() {
       <Title title="Wonderful Cities" />
       {
         cities
-        && (
-        <>
-          <CitiesGallery />
-          <CityAbout />
-        </>
-        )
+         && (
+         <>
+           <CitiesGallery />
+           <CityAbout />
+         </>
+         )
       }
     </section>
   );

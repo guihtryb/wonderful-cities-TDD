@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default function DefinitionDescription({ description, open, tag }) {
   return tag === 'ranking' ? (
     <dd className={`definition-description ${open ? 'open' : ''}`}>
-      {description.split('-').map((topic) => (<p className="topic">{topic}</p>))}
+      {description.split('-').map((topic) => (<p key={topic} className="topic">{topic}</p>))}
     </dd>
   ) : (
     <dd className={`definition-description ${open ? 'open' : ''}`}>

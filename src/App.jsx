@@ -1,7 +1,7 @@
 import './App.css';
-import React, { useEffect } from 'react';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import React /* , { useEffect } */ from 'react';
+// import Aos from 'aos';
+// import 'aos/dist/aos.css';
 import Header from './components/Header/Header';
 import CitiesSection from './components/CitiesSection/CitiesSection';
 import CitiesFaq from './components/CitiesFaq/CitiesFaq';
@@ -11,9 +11,9 @@ import Footer from './components/Footer/Footer';
 import LoginModal from './components/LoginModal/LoginModal';
 
 function App() {
-  useEffect(() => {
-    Aos.init();
-  }, []);
+  // useEffect(() => {
+  //   Aos.init();
+  // }, []);
   return (
     <div className="app">
       <Header />
