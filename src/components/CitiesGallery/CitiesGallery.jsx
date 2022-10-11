@@ -34,7 +34,7 @@ export default function CitiesGallery() {
             type="button"
             id="slide-button-previous"
           >
-            <img src={previousIcon} alt="previous city icon" />
+            <img className="city-image" src={previousIcon} alt="previous city icon" />
           </button>
         </li>
         {

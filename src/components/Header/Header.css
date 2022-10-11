@@ -16,6 +16,7 @@ header {
     position: sticky;
     top: 0;
     margin-top: 0;
+    min-width: 490px;
   }
   .login {
     margin: auto;
