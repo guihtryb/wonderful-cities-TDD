@@ -19,7 +19,6 @@ describe('Testing home page',() => {
     cy.get('#slide-button-next').click();
     cy.get('[data-testid="city-name"]').contains(/Singapore/i)
   });
-
   it('home page FAQ accordion works correctly', () => {
     cy.get('dt').should((dt) => {
       expect(dt).to.have.length(3)
@@ -27,5 +26,10 @@ describe('Testing home page',() => {
     cy.get('dd').should('have.css', 'display', 'none');
     cy.get('dt').first().click();
     cy.get('dd').first().should('have.css', 'display', 'block');
+  });
+  it('home page Contact tooltip works correctly', () => {
+    cy.get('.tooltip').should('have.css', 'display', 'none');
+    cy.get('[data-testid="map-image"]').trigger('mousemove');
+    cy.get('.tooltip').should('be.visible');
   });
 });
