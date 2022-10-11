@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import context from './Context';
-import Cities from '../api/cities.json';
+import Cities from '../api/cities';
 
 function Provider({ children }) {
   const [cities, setCities] = useState([]);
