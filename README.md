@@ -14,4 +14,4 @@ This project is made for travel enthusiasts or just interested in country trivia
 
 ![Example](public/assets/example.png)
 
-- Available at <a href="https://guihtryb.github.io/wonderful-cities/">this link</a>
+- Available at <a href="https://dashing-sunburst-7efb27.netlify.app/">this link</a>
