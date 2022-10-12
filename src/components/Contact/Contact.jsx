@@ -32,8 +32,8 @@ export default function Contact() {
 
   const handleMouseMove = (event) => {
     setShowToolTip(true);
-    setTop(event.nativeEvent.offsetY - 50);
-    setLeft(event.nativeEvent.offsetX - 150);
+    setTop(event.nativeEvent.offsetY + 20);
+    setLeft(event.nativeEvent.offsetX + 20);
   };
 
   const handleMouseLeave = () => {
