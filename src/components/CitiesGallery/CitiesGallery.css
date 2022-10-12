@@ -32,7 +32,6 @@
 
 @media (max-width : 850px) {
   .cities-gallery {
-    width: 95vw;
     display: flex;
     justify-content: center;
     grid-column: 1;
