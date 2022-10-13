@@ -32,9 +32,10 @@
 
 @media (max-width : 850px) {
   .cities-gallery {
+    grid-column: 1;
+    width: 95vw;
     display: flex;
     justify-content: center;
-    grid-column: 1;
   }
 
   .previous {
