@@ -12,15 +12,11 @@ function Provider({ children }) {
 
   useEffect(() => {
     const getCities = () => {
-      setCities(Cities);
       setCity(Cities[0]);
+      setCities(Cities);
     };
     getCities();
   }, []);
-
-  // useEffect(() => {
-  //   setCity(cities[cityIndex]);
-  // }, [cityIndex]);
 
   const contextValue = {
     cities,

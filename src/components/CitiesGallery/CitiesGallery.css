@@ -1,5 +1,5 @@
 .cities-gallery {
-  width: fit-content;
+  width: max-content;
   max-height: 300px;
   z-index: 0;
   grid-column: 2;
