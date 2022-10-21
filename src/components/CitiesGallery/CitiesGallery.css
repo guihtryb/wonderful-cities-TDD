@@ -34,7 +34,7 @@
   .cities-gallery {
     grid-column: 1;
     display: flex;
-    width: 100vw;
+    width: 95vw;
     justify-content: center;
   }
 
@@ -75,6 +75,6 @@
   }
 
   .slide-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
